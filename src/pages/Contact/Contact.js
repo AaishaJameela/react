@@ -1,16 +1,13 @@
 import React from 'react';
-import Header from'../../components/Header/Header.js';
-import Footer from '../../components/Footer/Footer.js';
-import Sidebar from'../../components/Sidebar/Sidebar.js';
+import Layout from '../../components/Layout/Layout.js';
 
 const Contact = (props) => {
     return (
+        <Layout>
         <div>
-            <Header />
-            <Sidebar />
              <center><h2>Contact Us</h2></center>
-             <Footer />
         </div>
+        </Layout>
     );
     }
     export default Contact;
