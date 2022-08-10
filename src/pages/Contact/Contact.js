@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../../components/Layout/Layout.js';
 
-const Contact = (props) => {
+const Contact = () => {
     return (
         <Layout>
         <div>
