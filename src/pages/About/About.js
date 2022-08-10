@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
-import Header from '../../components/Header/Header.js';
-import Footer from '../../components/Footer/Footer.js';
-import Sidebar from '../../components/Sidebar/Sidebar.js';
+import Layout from '../../components/Layout/Layout.js';
 
 const About= () => { 
   const [inputName, setInputName] = useState(""); 
@@ -38,9 +36,8 @@ const About= () => {
   }; 
 
   return (
+<Layout>
 <div>
-<Header />
-<Sidebar />
 <center><h1>SIGN-UP</h1>
 <label><b>Enter your first name:</b></label><br></br>
 <input type="text" id="firstName" value={inputName} onChange={handleInputName} ></input> <br></br>
@@ -56,8 +53,8 @@ const About= () => {
 <label><b>Enter your phone number:</b></label><br></br>
 <input type="number" id="phone" value={inputPhone} onChange={handleInputPhone}></input><br></br><br></br>
 <button onClick = {handleSubmitButton}>Submit</button></center>
-<Footer />
 </div>
+</Layout>
 );
 }
 
