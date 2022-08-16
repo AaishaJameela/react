@@ -1,7 +1,10 @@
 import React, {useState} from 'react';
 import Layout from '../../components/Layout/Layout.js';
+import Header from '../../components/Header/Header.js';
+import about from './About.css';
 
 const About= () => { 
+  const title1="About";
   const [inputName, setInputName] = useState(""); 
   const handleInputName = (e) => { 
     setInputName(e.target.value) 
@@ -36,6 +39,8 @@ const About= () => {
   }; 
 
   return (
+<div className="About">
+<Header newTitle1={title1}/>
 <Layout>
 <div>
 <center><h1>SIGN-UP</h1>
@@ -55,6 +60,7 @@ const About= () => {
 <button onClick = {handleSubmitButton}>Submit</button></center>
 </div>
 </Layout>
+</div>
 );
 }
 
